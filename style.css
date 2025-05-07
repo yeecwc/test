@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Класс скрытых элементов */
+.hidden {
+  display: none;
+}
+
+/* Затемнение фона */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* Стили для попапа */
+#popup {
+  position: fixed;
+  bottom: 0; /* Попап прижат к нижней части, имитируя клавиатуру */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 101;
+}
